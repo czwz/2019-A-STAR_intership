@@ -1,3 +1,8 @@
+###########################################################################################
+####This file is specifically designed for the LAMMPS trajectory file to calculate ALBO####
+####(Averaged Local Bond Order parameter). It requires the output format to accuire Q4-####
+####Q12 plus every Ylm-s for l=6.                                                      ####
+###########################################################################################
 import numpy as np
 
 def distance(x0, x1, dimensions):
