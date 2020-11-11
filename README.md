@@ -6,9 +6,9 @@ Requirements :
 - basic library NumPy 
 ```
 
-- This repository is the guidance written especially for those who take the project "Oil-Field Chemistry". The goal is to reduce the time and eFForts one needs to catch up. The content includes the input fille preparation and ALBO compputation.
+- This repository is the guidance written especially for those who take the project "Oil-Field Chemistry". The goal is to reduce the time and efforts one needs to catch up. The content includes the input fille preparation and ALBO computation.
 
-- LAMMPS requires input file for the calculation and there is a certain format for the input file. The input file roughly contains three categories: simulation box, simulation set up, and the simulation constraint. It should be noted that the preparation of LAMMPS input file needs one to create manually. To provide how an input file looks like, here an example file in C28 CG is included in this repo.
+- LAMMPS requires input file for the calculation and there is a certain format for the input file. The input file roughly contains three categories: simulation box, simulation set up, and the simulation constraint. It should be noted that the preparation of LAMMPS input file needs one to create manually. To provide how an input file looks like, here an example file C28_CG is included in this repo.
 
 ## Data File
 
@@ -30,7 +30,7 @@ $ python
 >>> out.VMD topo script 1beads("DATA_FILE_NAME")
 ```
 
-- Copy the output. This is basically the script for VMD to identify, dene bonds and create data file. The script has to be modified depending on different configuration. Details can be found here: https://www.ks.uiuc.edu/Training/Tutorials/vmd/tutorial-html/node4.html. Go to the console of VMD and type it.
+- Copy the output. This is basically the script for VMD to identify, define bonds and create data file. The script has to be modified depending on different configuration. Details can be found here: https://www.ks.uiuc.edu/Training/Tutorials/vmd/tutorial-html/node4.html. Go to the console of VMD and type it.
 
 ```diff
 vmd > topo; topo guessangles; topo guessdihedrals; topo guessimpropers; topo writelammpsdata DATA_FILE_NAME
@@ -44,8 +44,8 @@ vmd > topo; topo guessangles; topo guessdihedrals; topo guessimpropers; topo wri
 
 ```diff
 $ python
->>> import Q6 analyzer
->>> data = Q6 analyzer.trj analyzer("Q6.lammpstrj")
+>>> import Q6_analyzer
+>>> data = Q6_analyzer.trj analyzer("Q6.lammpstrj")
 >>> q6 = data.ALBO()
 >>> out = data.OUTPUT ALBO trj(q6,"Q6.lammpstrj","new Q6.lammpstrj")
 ```
