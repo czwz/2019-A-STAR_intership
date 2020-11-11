@@ -2,7 +2,7 @@
 
 Requirements :
 ```diff
-- a up-tod-date pythob version (>= python2.0)
+- an up-to-date pythob version (>= python2.0)
 - basic library NumPy 
 ```
 
