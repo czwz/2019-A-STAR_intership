@@ -36,7 +36,7 @@ $ python
 vmd > topo; topo guessangles; topo guessdihedrals; topo guessimpropers; topo writelammpsdata DATA_FILE_NAME
 ```
 
-- For two bead type, that is CH3 and CH2, simply change command -1BEADS to -2BEAD. Now the data file "DATA_FILE_NAME" has been create in the directory of VMD. However, one needs to manually type the corresponding coecients, box size and masses themselves.
+- For two bead type, that is CH3 and CH2, simply change command -1BEADS to -2BEAD. Now the data file "DATA_FILE_NAME" has been create in the directory of VMD. However, one needs to manually type the corresponding coeffcients, box size and masses themselves.
 
 ## ALBO Post Calculation (Q6)
 
